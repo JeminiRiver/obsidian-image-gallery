@@ -1,6 +1,6 @@
 {
   "name": "obsidian-image-gallery",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A zero setup masonry image gallery for Obsidian",
   "main": "main.js",
   "scripts": {
@@ -8,11 +8,11 @@
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   },
-  "author": "Luca Orio",
-  "homepage": "https://github.com/lucaorio/obsidian-image-gallery#readme",
+  "author": "Jemini River",
+  "homepage": "https://github.com/JeminiRiver/obsidian-image-gallery#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucaorio/obsidian-image-gallery.git"
+    "url": "git+https://github.com/JeminiRiver/obsidian-image-gallery.git"
   },
   "keywords": [
     "image",
