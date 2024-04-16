@@ -21,6 +21,8 @@ const getSettings = (src: string, container: HTMLElement) => {
   // store settings, normalize and set sensible defaults
   const settings = {
     path: undefined as string,
+    subfolder: undefined as boolean,
+    label: undefined as boolean,
     type: undefined as string,
     radius: undefined as number,
     gutter: undefined as string,
@@ -32,6 +34,8 @@ const getSettings = (src: string, container: HTMLElement) => {
   }
 
   settings.path = normalizePath(settingsSrc.path)
+  settings.subfolder = settingsSrc.subfolder ?? false
+  settings.label = settingsSrc.label ?? false
   settings.type = settingsSrc.type ?? 'horizontal'
   settings.radius = settingsSrc.radius ?? 0
   settings.gutter = settingsSrc.gutter ?? 8

@@ -10,7 +10,7 @@ export class imgGalleryInit extends MarkdownRenderChild {
   private _gallery: HTMLElement = null
   private _lightbox: any = null
   private _settings: {[key: string]: any} = {}
-  private _imagesList: {[key: string]: any} = {}
+  private _imagesList: Map<string, {[key: string]: any}> = new Map()
 
   constructor(
     public plugin: ImgGallery,

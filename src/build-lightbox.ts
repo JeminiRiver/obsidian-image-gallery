@@ -2,12 +2,20 @@ import { App, Platform } from 'obsidian'
 import Lightbox from 'lightgallery';
 import LightboxThumbs from 'lightgallery/plugins/thumbnail'
 
-const lightbox = (gallery: HTMLElement, imagesList: {[key: string]: any}, app: App) => {
+const lightbox = (
+  gallery: HTMLElement,
+  imageGroups: Map<string, {[key: string]: any}>,
+  app: App
+) => {
+  //const imagesList = imageGroups.reduce((acc, val) => acc.concat(val), [])
+  const imagesList = Array.from(imageGroups.values()).flat()
+
   // attach a custom button to open original image, only on desktop
   if (Platform.isDesktop) globalSearchBtn(gallery, imagesList)
 
   // setup a lightbox for the gallery
   const galleryLightbox = Lightbox(gallery, {
+    selector: '.grid-item',
     plugins: [LightboxThumbs],
     counter: false,
     download: false,
@@ -28,7 +36,10 @@ const lightbox = (gallery: HTMLElement, imagesList: {[key: string]: any}, app: A
   return galleryLightbox
 }
 
-const globalSearchBtn = (gallery: HTMLElement, imagesList: {[key: string]: any}) => {
+const globalSearchBtn = (
+  gallery: HTMLElement,
+  imagesList: {[key: string]: any}
+) => {
   gallery.addEventListener('lgInit', (event: CustomEvent) => {
     const galleryInstance = event.detail.instance
     const btn ='<button type="button" id="btn-glob-search" class="lg-icon btn-glob-search"></button>'
