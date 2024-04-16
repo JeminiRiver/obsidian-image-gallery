@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-image-gallery",
-	"name": "The River's - Image Gallery",
-	"version": "1.2.2",
-	"minAppVersion": "1.1.8",
-	"description": "A zero setup masonry image gallery for Obsidian",
-	"author": "Jemini River",
-	"authorUrl": "https://github.com/JeminiRiver",
-	"isDesktopOnly": false
+  "id": "obsidian-image-gallery",
+  "name": "The River's - Image Gallery",
+  "version": "1.2.2",
+  "minAppVersion": "1.1.8",
+  "description": "A zero setup masonry image gallery for Obsidian",
+  "author": "Jemini River",
+  "authorUrl": "https://github.com/JeminiRiver",
+  "isDesktopOnly": false
 }
