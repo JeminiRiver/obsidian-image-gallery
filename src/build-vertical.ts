@@ -14,7 +14,7 @@ const buildVertical = (
   imageGroups.forEach((groupedImages, key) => {
 
     // inject the gallery group label if getting subfolders
-    if( settings.subfolder) {
+    if( settings.recursive) {
       const label = gallery.createEl('div')
       label.addClass('gallery-group-label')
       label.style.width = '100%'

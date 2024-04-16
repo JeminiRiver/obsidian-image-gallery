@@ -20,7 +20,7 @@ const getImagesList = (
   }
 
   // get sub folders if necessary
-  if( settings.subfolder) {
+  if( settings.recursive) {
     files = getSubfoldersList(files)
   }
 
