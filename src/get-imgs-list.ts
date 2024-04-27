@@ -9,7 +9,11 @@ const getImagesList = (
     settings: {[key: string]: any}
   ): Map<string, any> => {
   // retrieve a list of the files
-  const folder = app.vault.getAbstractFileByPath(settings.path)
+  let path = settings.path;
+  if( path == '.' ) {
+    path = app.workspace.getActiveFile().parent.path
+  }
+  const folder = app.vault.getAbstractFileByPath(path)
 
   let files
   if (folder instanceof TFolder) { files = folder.children }
