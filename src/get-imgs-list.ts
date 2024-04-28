@@ -10,9 +10,13 @@ const getImagesList = (
   ): Map<string, any> => {
   // retrieve a list of the files
   let path = settings.path;
+  if( path.startsWith('./') ) {
+    path = app.workspace.getActiveFile().parent.path + path.slice(1)
+  }
   if( path == '.' ) {
     path = app.workspace.getActiveFile().parent.path
   }
+  path.replaceAll('//', '/');
   const folder = app.vault.getAbstractFileByPath(path)
 
   let files
