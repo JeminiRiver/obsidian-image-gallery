@@ -13,9 +13,13 @@ const getImagesList = (
   if( path.startsWith('./') ) {
     path = app.workspace.getActiveFile().parent.path + path.slice(1)
   }
+  if( path == './' ) {
+    path = app.workspace.getActiveFile().parent.path + app.workspace.getActiveFile().name  + '/';
+  }
   if( path == '.' ) {
     path = app.workspace.getActiveFile().parent.path
   }
+
   path.replaceAll('//', '/');
   const folder = app.vault.getAbstractFileByPath(path)
 

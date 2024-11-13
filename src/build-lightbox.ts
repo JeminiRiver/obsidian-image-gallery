@@ -11,7 +11,7 @@ const lightbox = (
   const imagesList = Array.from(imageGroups.values()).flat()
 
   // attach a custom button to open original image, only on desktop
-  if (Platform.isDesktop) globalSearchBtn(gallery, imagesList)
+  if (Platform.isDesktop) globalSearchBtn(gallery, imagesList, app)
 
   // setup a lightbox for the gallery
   const galleryLightbox = Lightbox(gallery, {
@@ -38,7 +38,8 @@ const lightbox = (
 
 const globalSearchBtn = (
   gallery: HTMLElement,
-  imagesList: {[key: string]: any}
+  imagesList: {[key: string]: any},
+  app: App
 ) => {
   gallery.addEventListener('lgInit', (event: CustomEvent) => {
     const galleryInstance = event.detail.instance
