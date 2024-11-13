@@ -33,7 +33,7 @@ const getSettings = (src: string, container: HTMLElement) => {
     height: undefined as number,
   }
 
-  settings.path = normalizePath(settingsSrc.path)
+  settings.path = settingsSrc.path ?? './'
   settings.recursive = settingsSrc.recursive ?? false
   settings.label = settingsSrc.label ?? false
   settings.type = settingsSrc.type ?? 'horizontal'
