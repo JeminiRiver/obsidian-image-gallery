@@ -894,3 +894,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .lg-toolbar .btn-glob-search:after {
   content: '';
 }
+
+/* ========================================================================= */
+/* Gallery configuration modal styles                                        */
+/* ========================================================================= */
+
+.modal-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.folder-picker-item {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.folder-picker-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.conditional-settings-container {
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.conditional-settings-container .setting-item:first-child {
+  border-top: none;
+}

@@ -1,7 +1,7 @@
-![Obsidian Image Gallery](assets/obsidian-image-gallery-header.jpg)
+![Obsidian Masonry Image Gallery](assets/obsidian-image-gallery-header.jpg)
 
-# Obsidian Image Gallery
-Obsidian Image Gallery is a zero setup masonry image gallery for [Obsidian](https://obsidian.md/).
+# Obsidian Masonry Image Gallery
+Obsidian Masonry Image Gallery is a zero setup masonry image gallery for [Obsidian](https://obsidian.md/).
 
 **Table of Contents**
 - [Requirements](#requirements)
@@ -20,7 +20,7 @@ Obsidian Image Gallery is a zero setup masonry image gallery for [Obsidian](http
 
 ## Installation
 
-Obsidian Image Gallery can be installed from within Obsidian, as for [every other community plugin](https://help.obsidian.md/Advanced+topics/Community+plugins#Discover+and+install+community+plugins).
+Obsidian Masonry Image Gallery can be installed from within Obsidian, as for [every other community plugin](https://help.obsidian.md/Advanced+topics/Community+plugins#Discover+and+install+community+plugins).
 
 ## Usage
 
@@ -46,11 +46,11 @@ Take a look at [settings](#settings) to see how to tweak some properties of the 
 
 In *[Live Preview](https://help.obsidian.md/Live+preview+update)* mode, the gallery will be generated after moving the cursor outside the code block. Using the regular *Source Mode*, press `cmd+e` (or `ctrl+e`) to trigger Obsidian's Note Preview.
 
-![Obsidian Image Gallery - Animation](assets/obsidian-image-gallery.gif)
+![Obsidian Masonry Image Gallery - Animation](assets/obsidian-image-gallery.gif)
 
 `1.1.1` introduces a lightbox view accessible by clicking on any image part of the gallery. Then, if you need to, click the button on the top right to open the original image in a new tab.
 
-![Obsidian Image Gallery - Animation](assets/obsidian-image-gallery-lightbox.jpg)
+![Obsidian Masonry Image Gallery - Lightbox](assets/obsidian-image-gallery-lightbox.jpg)
 
 ## Settings
 
@@ -87,7 +87,7 @@ Options applicable only for `type=vertical`:
 An additional note about the orientation of the masonry vs. the distribution of its images: [until a true masonry layout](https://drafts.csswg.org/css-grid-3/) is available for native `css` grids, the sorting of the vertical version is a hit or miss. This is because the flow of its elements goes from top to bottom (see [this article](https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout) for more info about it.) If sorting is critical, please rely on the horizontal version; its images are sometimes cropped, but their ordering is way more intuitive.
 
 ## Examples:
-![Obsidian Image Gallery - Examples](assets/obsidian-image-gallery-examples.jpg)
+![Obsidian Masonry Image Gallery - Examples](assets/obsidian-image-gallery-examples.jpg)
 
 ## Changelog
 
