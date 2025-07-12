@@ -100,6 +100,12 @@ An additional note about the orientation of the masonry vs. the distribution of 
   - added a "open image in new tab" button available in the lightbox
   - fixed the casing of README.md to let Obsidian retrieve the correct file
 
+## Credits
+
+**Original Developer:** [Luca Orio](https://github.com/lucaorio) - Created the original "Obsidian Image Gallery" plugin with masonry layouts, lightbox functionality, and YAML configuration.
+
+**Current Maintainer:** [Jemini Willis (JeminiRiver)](https://github.com/JeminiRiver) - Enhanced the plugin (now "Masonry Image Gallery") with interactive modal configuration, gallery editing capabilities, and ongoing maintenance.
+
 ## Acknowledgments
 All photos in the header are by various photographers and available on [Unsplash](https://unsplash.com/s/photos/architecture).
 

@@ -8,7 +8,19 @@
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   },
-  "author": "Jemini River",
+  "author": "Jemini Willis <email@jema.dev>",
+  "contributors": [
+    {
+      "name": "Luca Orio",
+      "email": "luca.o@me.com",
+      "url": "https://github.com/lucaorio"
+    },
+    {
+      "name": "Jemini Willis",
+      "email": "email@jema.dev",
+      "url": "https://github.com/JeminiRiver"
+    }
+  ],
   "homepage": "https://github.com/JeminiRiver/obsidian-image-gallery#readme",
   "repository": {
     "type": "git",

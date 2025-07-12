@@ -1,3 +1,12 @@
+/**
+ * Obsidian Masonry Image Gallery Plugin
+ * 
+ * Original Author: Luca Orio (https://github.com/lucaorio) - "Obsidian Image Gallery"
+ * Current Maintainer: Jemini Willis (https://github.com/JeminiRiver) - Enhanced as "Masonry Image Gallery"
+ * 
+ * A zero setup masonry image gallery for Obsidian with interactive configuration.
+ */
+
 import { Plugin, Editor, MarkdownView, Notice } from 'obsidian'
 import { imgGalleryInit } from './init';
 import { GalleryConfigModal } from './gallery-config-modal';
